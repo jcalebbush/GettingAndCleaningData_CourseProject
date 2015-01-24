@@ -13,8 +13,14 @@ Once the x training and x test are combined to a table called x_test_train using
 ##Step4: We add rows containg the activity value and subject to the x_test_train data
 We assign column names to the y_test, y_train, sub_test, sub_train then using the cbind() and rbind() functions add these new columns to the x_test_train data set to create the table called sub_act_x.
 
-##Step5: We then filter out only the columns containgin the subject, activity, and column names that include the substring "mean()" or "std()".  I realize there are other columns that contain the word "mean", however, I took liberty in excluding those columns as they did not follow with the "()".  They could have just as easily been included but were not due to the diffent naming convention.  To filter on the relevant columns, I used the grepl() function within the column index of the sub_act_x table.
+##Step5: We then filter out only the columns containgin the subject, activity, and column names that include the substring "mean()" or "std()".  
+I realize there are other columns that contain the word "mean", however, I took liberty in excluding those columns as they did not follow with the "()".  They could have just as easily been included but were not due to the diffent naming convention.  To filter on the relevant columns, I used the grepl() function within the column index of the sub_act_x table.
 
-##
+##Step6:We assign the activity labels to the sub_act_x table
+Once we assign column names to the activity file, we use the merge function to joing the activity label to the correct corresponding activity_num that was provided in the y files.  The data table that include the activity labels was called merged_data.
 
-##
+##Step7: We clean up the the column names to get replace dashes "-" with underscores "_" and remove parentheses "()".
+Using the gsub() function I replaced dashes with underscores and removed all parentheses in the column names in the table 
+
+##Step8:  We take this tidy dataset called merged data and summarize it by activity and subject to calculate the average for each mean and std variable.
+Using the aggregate function, we summarize the data by activity and subject to calculate the average of each mean and std variable in the data table so that we are left with a table that shows the average value for each activity, subject combination in the table.  We call this table sub_act_mean.  After the sumarizaton completes, we rename the columns for the average value so that the original column names are prefaced with the "AVG" so that the user know these new values are averages rolled up by activity and subject. Lastly we then write this new data table sub_act_mean to my working directory.
