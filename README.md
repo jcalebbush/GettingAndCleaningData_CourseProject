@@ -10,7 +10,7 @@ Eight tables were read into in order to build by clean and tidy dataset. The sub
 ##Step3: Combine the x_test and x_train files into one data table
 Once the x training and x test are combined to a table called x_test_train using the rbind() function, the contents of the new file were tested using the head() and names() functions.  Once the contents of the table are validated, the contents of the features.txt file are obtained and temporarily assigned as column names to the combined dataset called x_test_train.  The values of these column names were used later to filter the data for only mean and std columns.
 
-##Step4: Add rows containing the activity value and subject to the x_test_train data
+##Step4: Add columns containing the activity value and subject to the x_test_train data
 Column names were assigned to the y_test, y_train, sub_test, sub_train.  The cbind() and rbind() functions were used to add these new columns to the x_test_train data set to create the table called sub_act_x.
 
 ##Step5: Filter out only the columns containing the subject, activity, and column names that include the substring "mean()" or "std()".  
