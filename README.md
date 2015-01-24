@@ -2,7 +2,7 @@
 This repository contains the script and documentation for the course project for the Getting and Cleaning Data course.
 
 ##Step1:  Obtain the data 
-The raw data files were downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to the working directory and unzipped within the working directory using the read.table() and the unzip() functions in R.  After files were downloaded and unzipped the date the data was obtained by sotring the date to a variable called date_Downloaded.
+The raw data files were downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to the working directory and unzipped within the working directory using the read.table() and the unzip() functions in R.  After files were downloaded and unzipped the date the data was obtained by storing the date to a variable called date_Downloaded.
 
 ##Step2: Read in the needed files for the project
 Eight tables were read into in order to build by clean and tidy dataset. The subject, x, and y files for train and test were read into R as well as the "activity_labels.txt" and features.txt  to assign descriptive values to the y file activities and obtain column names for the contents of the x_train.txt and x_test.txt files.  The newly read tables are called x_test, x_train, y_test, y_train, sub_test, sub_train, activity, and feat.
