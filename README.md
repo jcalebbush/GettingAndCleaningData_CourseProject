@@ -1,7 +1,7 @@
 # GettingAndCleaningData_CourseProject
 This repository contains the script and documentation for the course project for the Getting and Cleaning Data course.
 
-##Step1:  Obtaining the data 
+##Step1:  Obtain the data 
 The raw data files were downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to the working directory and unzipped within the working directory using the read.table() and the unzip() functions in R.  After files were downloaded and unzipped the date the data was obtained by sotring the date to a variable called date_Downloaded.
 
 ##Step2: Read in the needed files for the project
@@ -13,7 +13,7 @@ Once the x training and x test are combined to a table called x_test_train using
 ##Step4: Add rows containing the activity value and subject to the x_test_train data
 Column names were assigned to the y_test, y_train, sub_test, sub_train.  The cbind() and rbind() functions were used to add these new columns to the x_test_train data set to create the table called sub_act_x.
 
-##Step5: Filter out only the columns containgin the subject, activity, and column names that include the substring "mean()" or "std()".  
+##Step5: Filter out only the columns containing the subject, activity, and column names that include the substring "mean()" or "std()".  
 There are other columns that contain the word "mean", however, those column names did not follow with the "()".  They could have just as easily been included but were not due to the diffent naming convention.  To filter on the relevant columns, the grepl() function was used within the column index of the sub_act_x table.
 
 ##Step6: Assign the activity labels to the sub_act_x table
