@@ -12,3 +12,9 @@ Once the x training and x test are combined to a table called x_test_train using
 
 ##Step4: We add rows containg the activity value and subject to the x_test_train data
 We assign column names to the y_test, y_train, sub_test, sub_train then using the cbind() and rbind() functions add these new columns to the x_test_train data set to create the table called sub_act_x.
+
+##Step5: We then filter out only the columns containgin the subject, activity, and column names that include the substring "mean()" or "std()".  I realize there are other columns that contain the word "mean", however, I took liberty in excluding those columns as they did not follow with the "()".  They could have just as easily been included but were not due to the diffent naming convention.  To filter on the relevant columns, I used the grepl() function within the column index of the sub_act_x table.
+
+##
+
+##
