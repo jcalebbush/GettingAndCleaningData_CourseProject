@@ -1,5 +1,5 @@
-See Variable Descriptions below of the table where Mean of mean and Mean of std are created.
-Experiment Background:
+#See Variable Descriptions below of the table where Mean of mean and Mean of std are created.
+#Experiment Background:
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
