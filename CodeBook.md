@@ -55,8 +55,14 @@ Variable Descriptions for the sub_act_mean table :
    AVG_tBodyAcc_std_X, AVG_tBodyAcc_std_Y, AVG_tBodyAcc_std_Z, AVG_tGravityAcc_std_X, AVG_tGravityAcc_std_Y, AVG_tGravityAcc_std_Z.
    
 4. Below describes the creation of the variables: 
+   AVG_tBodyAccMag_mean, tGravityAccMag_mean, AVG_tBodyAccJerkMag_mean, AVG_tBodyGyroMag_mean, AVG_tBodyGyroJerkMag_mean, AVG_fBodyAcc_mean_X, 
+   AVG_fBodyAcc_mean_Y, AVG_fBodyAcc_mean_Z, AVG_fBodyAccJerk_mean_X, AVG_fBodyAccJerk_mean_Y, AVG_fBodyAccJerk_mean_Z, AVG_fBodyGyro_mean_X, 
+   AVG_fBodyGyro_mean_Y, AVG_fBodyGyro_mean_Z, AVG_fBodyAccJerkMag_mean, AVG_fBodyGyroMag_mean, AVG_fBodyGyroJerkMag_mean, AVG_tBodyAccMag_std, 
+   tGravityAccMag_std, AVG_tBodyAccJerkMag_std, AVG_tBodyGyroMag_std, AVG_tBodyGyroJerkMag_std, AVG_fBodyAcc_std_X, AVG_fBodyAcc_std_Y, 
+   AVG_fBodyAcc_std_Z, AVG_fBodyAccJerk_std_X, AVG_fBodyAccJerk_std_Y, AVG_fBodyAccJerk_std_Z, AVG_fBodyGyro_std_X, AVG_fBodyGyro_std_Y, 
+   AVG_fBodyGyro_std_Z, AVG_fBodyAccJerkMag_std, AVG_fBodyGyroMag_std, AVG_fBodyGyroJerkMag_std.
    
-   Subsequently, the body linear acceleration and angular velocity were derived in time to 
+Subsequently, the body linear acceleration and angular velocity were derived in time to 
    obtain Jerk signals (tBodyAccJerk_XYZ and tBodyGyroJerk_XYZ). Also the magnitude of these 
    three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, 
    tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
